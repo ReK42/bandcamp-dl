@@ -80,7 +80,7 @@ def path_is_writable_file(arg: str) -> Path:
 def main() -> None:
     """Script entry point."""
     parser = ArgumentParser(
-        prog="bandcamp_downloader",
+        prog=_name,
         add_help=False,
         description=(
             "Download your collection from Bandcamp.\n"

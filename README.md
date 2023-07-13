@@ -8,25 +8,27 @@ pipx install git+https://github.com/ReK42/bandcamp-dl.git
 
 ## Usage
 ```sh
-usage: bandcamp_downloader [-b BROWSER]
-                           [-c FILE]
-                           [-d DIR]
-                           [-f FORMAT]
-                           [-t INT]
-                           [-p FLOAT]
-                           [-m INT]
-                           [-r FLOAT]
-                           [--filename-format FORMAT]
-                           [--force]
-                           [-v]
-                           [--debug]
-                           [-h]
-                           [--version]
-                           USERNAME
+usage: bandcamp_dl [-b BROWSER]
+                   [-c FILE]
+                   [-d DIR]
+                   [-f FORMAT]
+                   [-t INT]
+                   [-p FLOAT]
+                   [-m INT]
+                   [-r FLOAT]
+                   [--filename-format FORMAT]
+                   [--force]
+                   [-v]
+                   [--debug]
+                   [-h]
+                   [--version]
+                   USERNAME
 
 Download your collection from Bandcamp.
 
-To use, login to Bandcamp using one of the supported browsers. All albums in your collection will be downloaded to the output directory, with subfolders, based on the filename format selected.
+To use, login to Bandcamp using one of the supported browsers. All albums in your
+collection will be downloaded to the output directory, with subfolders, based on the
+filename format selected.
 
 Arguments:
   USERNAME              Bandcamp username
