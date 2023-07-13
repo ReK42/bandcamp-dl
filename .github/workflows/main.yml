@@ -1,5 +1,5 @@
 ---
-name: lint
+name: main
 on: [push, pull_request]
 permissions:
   contents: read
@@ -45,3 +45,13 @@ jobs:
         run: mypy --verbose src
       - name: Run black
         run: black --verbose src
+  verify:
+    if: always()
+    needs:
+      - lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify all required jobs have succeeded
+        uses: re-actors/alls-green@release/v1
+        with:
+          jobs: ${{ toJSON(needs) }}

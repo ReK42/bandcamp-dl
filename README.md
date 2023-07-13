@@ -1,13 +1,23 @@
 # bandcamp-dl
+
+[![PyPi Version](https://img.shields.io/pypi/v/bandcamp-dl.svg)](https://pypi.python.org/pypi/bandcamp-dl)
+[![PyPI Status](https://img.shields.io/pypi/status/ruff)](https://pypi.python.org/pypi/bandcamp-dl)
+[![Python Versions](https://img.shields.io/pypi/pyversions/bandcamp-dl.svg)](https://pypi.python.org/pypi/bandcamp-dl)
+[![Last Commit](https://img.shields.io/github/last-commit/ReK42/bandcamp-dl/main?logo=github)](https://github.com/ReK42/bandcamp-dl/commits/main)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/ReK42/bandcamp-dl/main.yml?logo=github)](https://github.com/ReK42/bandcamp-dl/actions)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![License](https://img.shields.io/github/license/ReK42/bandcamp-dl)](https://github.com/ReK42/bandcamp-dl/blob/main/LICENSE)
+
 Download your collection from Bandcamp.
 
 ## Installation
 ```sh
-pipx install git+https://github.com/ReK42/bandcamp-dl.git
+pipx install bandcamp-dl
 ```
 
 ## Usage
-```sh
+```
 usage: bandcamp_dl [-b BROWSER]
                    [-c FILE]
                    [-d DIR]
@@ -54,20 +64,8 @@ Options:
 ```
 
 ## Development Environment
-#### Windows
-```Powershell
-git clone https://github.com/ReK42/bandcamp-dl.git
-cd .\bandcamp-dl
-python -m venv .env
-.\.env\Scripts\Activate.ps1
-pip install -e .[tests]
-```
-
-#### Linux
-```bash
+```sh
 git clone https://github.com/ReK42/bandcamp-dl.git
 cd bandcamp-dl
-python -m venv .env
-source .env/bin/activate
 pip install -e .[tests]
 ```
