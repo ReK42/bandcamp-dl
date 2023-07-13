@@ -5,24 +5,13 @@ updates:
     directory: /
     schedule:
       interval: weekly
-      day: sunday
-      time: "00:00"
+      day: monday
+      time: "08:00"
       timezone: UTC
-    labels:
-      - Dependencies
-      - GitHub Actions
   - package-ecosystem: pip
     directory: /
     schedule:
       interval: weekly
-      day: sunday
-    labels:
-      - Dependencies
-      - Python
-    groups:
-      dev-dependencies:
-        patterns:
-          - black
-          - mypy
-          - ruff
-          - types-*
+      day: monday
+      time: "08:00"
+      timezone: UTC
