@@ -1,0 +1,28 @@
+---
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: sunday
+      time: 00:00
+      timezone: UTC
+    labels:
+      - Dependencies
+      - GitHub Actions
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+      day: sunday
+    labels:
+      - Dependencies
+      - Python
+    groups:
+      dev-dependencies:
+        patterns:
+          - black
+          - mypy
+          - ruff
+          - types-*
