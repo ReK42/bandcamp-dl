@@ -5,7 +5,7 @@
 name = "bandcamp-dl"
 version = "1.0.0"
 description = "Download your collection from Bandcamp."
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 readme = "README.md"
 license = {file = "LICENSE"}
 authors = [
@@ -25,7 +25,6 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Topic :: Multimedia :: Sound/Audio",
@@ -62,16 +61,17 @@ build-backend = "setuptools.build_meta"
 where = ["src"]
 
 [tool.setuptools.package-data]
-get_devices = ["*.example"]
+
+[tool.setuptools_scm]
 
 ###########################
 # Development Environment #
 ###########################
 [tool.black]
-skip-string-normalization = true
 
 [tool.mypy]
 cache_dir = ".cache/mypy"
+explicit_package_bases = true
 
 [[tool.mypy.overrides]]
 module = "browser_cookie3"

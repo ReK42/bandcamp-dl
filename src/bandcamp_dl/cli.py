@@ -199,5 +199,5 @@ def main() -> None:
         sys.exit(app.run())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

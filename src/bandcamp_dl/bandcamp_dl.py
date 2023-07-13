@@ -99,7 +99,7 @@ class BandcampDownloader(object):
         directory: Path = Path("."),
         cookie_path: str = "",
         filename_format: str = "$artist/$artist - $title",
-        file_format: str = 'mp3-320',
+        file_format: str = "mp3-320",
         threads: int = 4,
         pause: float = 1.0,
         max_retries: int = 5,
@@ -249,11 +249,11 @@ class BandcampDownloader(object):
             data = self._get_pagedata(url)["download_items"][0]
             album = data["title"]
             if "downloads" not in data:
-                raise IOError(f"Album \"{album}\" has no downloads available.")
+                raise IOError(f"Album {album} has no downloads available")
             if self.file_format not in data["downloads"]:
                 raise IOError(
-                    f"Album \"{album}\" does not have a download for format"
-                    f" \"{self.file_format}\""
+                    f"Album {album} does not have a download for format"
+                    f" {self.file_format}"
                 )
             url = data["downloads"][self.file_format]["url"]
             info = {k: data[k] for k in ALBUM_INFO_KEYS}
