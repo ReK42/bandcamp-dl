@@ -33,7 +33,7 @@ classifiers = [
 dependencies = [
     "browser-cookie3 == 0.14.0",
     "bs4 == 0.0.1",
-    "requests == 2.27.1",
+    "requests == 2.31.0",
     "rich == 13.4.2"
 ]
 
