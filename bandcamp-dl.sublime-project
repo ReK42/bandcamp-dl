@@ -1,0 +1,51 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"folder_exclude_patterns": [
+				"__pycache__",
+				".pytest_cache",
+				".cache",
+				".mypy_cache",
+				".ruff_cache",
+				".env",
+				".venv",
+				"env",
+				"venv",
+				"build",
+				"develop-eggs",
+				"dist",
+				"downloads",
+				"eggs",
+				".eggs",
+				"lib",
+				"lib64",
+				"parts",
+				"sdist",
+				"var",
+				"wheels",
+				"pip-wheel-metadata",
+				"share/python-wheels",
+				"*.egg-info",
+			],
+			"file_exclude_patterns": [
+				"*.sublime-project",
+				"*.pyc",
+				"*.pyd",
+				"*.pyo",
+				".Python",
+				".installed.cfg",
+				"*.egg",
+			],
+		}
+	],
+	"settings": {
+		"LSP": {
+			"LSP-pylsp": {
+				"settings": {
+					"pylsp.plugins.jedi.environment": "./.env",
+				},
+			},
+		},
+	},
+}
