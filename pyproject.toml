@@ -57,10 +57,14 @@ tests = [
 requires = ["setuptools", "setuptools_scm[toml]"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools]
+zip-safe = false
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools.package-data]
+bandcamp_dl = ["py.typed"]
 
 [tool.setuptools_scm]
 
@@ -71,7 +75,6 @@ where = ["src"]
 
 [tool.mypy]
 cache_dir = ".cache/mypy"
-explicit_package_bases = true
 
 [[tool.mypy.overrides]]
 module = "browser_cookie3"
